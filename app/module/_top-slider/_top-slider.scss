@@ -63,6 +63,12 @@
   }
   &__item--second {
     background-image: url('../images/top-slider/top-slider-second.png');
+    .top-slider__text {
+      margin-bottom: 10px;
+    }
+    .top-slider__text--last {
+      margin-bottom: 35px;
+    }
   }
   &__item--third {
     background-image: url('../images/top-slider/top-slider-third.png');
@@ -70,7 +76,6 @@
 }
 
 .slick-dots {
-  // position: absolute;
   display: flex;
   font-size: 0;
   li {

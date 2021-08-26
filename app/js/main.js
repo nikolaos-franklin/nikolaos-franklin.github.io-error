@@ -8,7 +8,7 @@ $(function(){
    autoplay: true,
    fade: true,
    cssEase: 'linear',
-   speed: 1500,
+   speed: 1000,
    appendDots:$('.slick-dots')
  });
 });
