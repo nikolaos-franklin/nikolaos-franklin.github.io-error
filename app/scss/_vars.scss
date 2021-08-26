@@ -1,0 +1,43 @@
+$minWidth: 320px;
+$maxWidth: 1920;
+$maxWidthContainer: 1170;
+$md1: $maxWidthContainer+12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$mainColor: #000;
+$hoverColor: #44C9FF;
+
+%harabara-700 {
+  font-family: "Harabara",
+  sans serif;
+  font-weight: 700;
+}
+%montserrat-700 {
+  font-family: "Montserrat-Bold",
+    sans serif;
+  font-weight: 700;
+}
+%montserrat-600 {
+  font-family: "Montserrat-SemiBold",
+    sans serif;
+  font-weight: 600;
+}
+%montserrat-400 {
+  font-family: "Montserrat-Regular",
+    sans serif;
+  font-weight: 400;
+}
+%openSans-400 {
+  font-family: "OpenSans-Regular",
+    sans serif;
+  font-weight: 400;
+}
+
+// %text {
+//   @extend %rubik-400;
+//   font-size: 14px;
+//   line-height: 32px;
+//   color: #7b7b7b;
+// }

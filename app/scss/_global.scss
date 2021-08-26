@@ -1,0 +1,38 @@
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  @extend %montserrat-400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.container {
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+
+  @media (max-width: $md1 + px) {
+    max-width: 970px;
+  }
+
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+.page {
+  flex: 1 1 auto;
+}
+//</ОСНОВНОЙ БЛОК>====================================================================================================
+

@@ -1,0 +1,8 @@
+@import 'vars'; //пишутся переменные для цвета, шрифта и т.д. 
+@import 'fonts';
+@import 'reset'; //обнуление стилей
+@import 'libs';
+@import 'global'; //глобальные стили, типо reset.css. Что-то для бади, ссылок
+@import '../module/_header/_header';
+@import '../module/_top-slider/_top-slider';
+@import '../module/_footer/_footer';
