@@ -1,0 +1,104 @@
+.contacts {
+  padding-bottom: 170px;
+  &__title {
+    @extend %title;
+    margin-bottom: 60px;
+  }
+  &__subtitle {
+    @extend %montserrat-700;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 45px;
+    text-align: center;
+  }
+  &__box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+    display: flex;
+    margin-bottom: 25px;
+    a {
+      color: #242424;
+    }
+  }
+  &__item-icon {
+    padding-right: 16px;
+  }
+  &__item-link {
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #242424;
+  }
+  &__form-box {
+    padding: 65px 85px 0 125px;
+    position: relative;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/contacts/contacts-decor1.svg');
+      background-repeat: no-repeat;
+      top: 0;
+      left: 25px;
+      width: 155px;
+      height: 155px;
+      z-index: -1;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/contacts/contacts-decor2.svg');
+      background-repeat: no-repeat;
+      top: 0;
+      right: 0;
+      width: 155px;
+      height: 235px;
+      z-index: -1;
+    }
+  }
+  &__form {
+    padding: 50px 40px 70px 40px;
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+    border-radius: 6px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/contacts/contacts-decor3.svg');
+      background-repeat: no-repeat;
+      bottom: 0;
+      left: 10px;
+      width: 155px;
+      height: 155px;
+      z-index: -1;
+    }
+  }
+  &__form-name,
+  &__form-email,
+  &__form-message {
+    margin-bottom: 20px;
+    padding: 11px 0 10px 15px;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    outline: none;
+  }
+  &__form-message {
+    height: 80px;
+    resize : none;
+  }
+  &__form-btn {
+    @extend %btn;
+    padding: 13px 0;
+  }
+}
