@@ -41,3 +41,36 @@ $hoverColor: #44C9FF;
 //   line-height: 32px;
 //   color: #7b7b7b;
 // }
+
+%link {
+  padding: 10px 50px;
+  border: 2px solid #FFFFFF;
+  border-radius: 6px;
+  color: #fff;
+  transition: all .3s;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover {
+    background: #06B25F;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+%btn {
+  padding: 5px 25px;
+  color: #fff;
+  background-color: #06B25F;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all .3s;
+  &:hover {
+    background: #039953;
+  }
+  &:focus {
+    outline: 0;
+  }
+}

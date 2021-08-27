@@ -40,20 +40,11 @@
     margin-bottom: 60px;
   }
   &__link {
-    padding: 10px 50px;
-    border: 2px solid #FFFFFF;
-    border-radius: 6px;
-    color: #fff;
+    @extend %link;
     margin-right: 25px;
   }
   &__btn {
-    padding: 5px 25px;
-    color: #fff;
-    background-color: #06B25F;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    text-transform: uppercase;
+    @extend %btn;
   }
   &__subtitle {
     text-transform: uppercase;
@@ -83,20 +74,34 @@
     cursor: pointer;
     width: 20px;
     height: 20px;
-    border: 3px solid #FFFFFF;
-    background-color: #fff;
+    border: 3px solid #fff;
+    background-color: transparent;
     border-radius: 50%;
   }
   button {
     display: none;
   }
-  .slick-active {
-    border: 3px solid #FFFFFF;
-    background-color: transparent;
-  }
 }
 
-.slick-dots .slick-active {
-  border: 3px solid #FFFFFF;
-  background-color: transparent;
+// .slick-dots .slick-active {
+//   border: 3px solid #FFFFFF;
+//   background-color: #000;
+// }
+
+.socials {
+  position: absolute;
+  right: 0;
+  position: fixed;
+  z-index: 150;
+  background-color: #fff;
+  top: 350px;
+  box-shadow: 0px 2px 12px 1px rgba(29, 51, 107, 0.25);
+  border-radius: 3px;
+  &__list-item {
+    padding: 12px;
+    border-bottom: 1px solid #bfc3c8;
+  }
+  &__list-item:last-child() {
+    border-bottom: none;
+  }
 }

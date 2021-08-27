@@ -20,12 +20,8 @@
     padding: 10px 20px;
   }
   &__btn {
-    color: #fff;
-    background-color: transparent;
+    @extend %link;
     padding: 0 25px;
-    border: 2px solid #fff;
-    border-radius: 6px;
-    cursor: pointer;
   }
 }
 .menu {
