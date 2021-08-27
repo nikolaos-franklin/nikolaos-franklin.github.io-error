@@ -7,6 +7,7 @@
 @import '../module/_top-slider/_top-slider';
 @import '../module/_footer/_footer';
 @import '../module/_clutch/_clutch';
+@import '../module/_discuss/_discuss';
 
 .technologies {
   padding: 120px 0 90px;
@@ -57,5 +58,35 @@
   }
   &__box-item+.technologies__box-item {
     margin-left: 80px;
+  }
+}
+
+.services {
+  padding: 120px 0 60px;
+  &__title {
+    @extend %title;
+    margin-bottom: 25px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__item-content {
+    max-width: 555px;
+  }
+  &__item-title {
+    @extend %harabara-700;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #0D6EB7;
+    margin-bottom: 5px;
+  }
+  &__item:nth-child(even) {
+    .services__item-content {
+      order: 1;
+    }
   }
 }

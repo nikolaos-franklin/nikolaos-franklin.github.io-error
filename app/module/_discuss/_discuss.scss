@@ -1,0 +1,56 @@
+.discuss {
+  padding: 165px 0 240px;
+  background-image: url('../images/discuss-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  &::after {
+    content: '';
+    position: absolute;
+    background-image: url('../images/discuss-after.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -100;
+    bottom: 0;
+    top: -55px;
+    width: 100%;
+  }
+  &__inner {
+    text-align: center;
+    color: #fff;
+  }
+  &__title {
+    @extend %harabara-700;
+    font-size: 40px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+  &__text {
+    font-size: 24px;
+    line-height: 29px;
+    margin-bottom: 35px;
+  }
+  &__link {
+    @extend %montserrat-700;
+    padding: 7px 30px;
+    background: #FFFFFF;
+    border: 2px solid #06B25F;
+    border-radius: 6px;
+    font-size: 16px;
+    line-height: 36px;
+    color: #06B25F;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all .3s;
+    &:hover {
+      background: #06B25F;
+      color: #fff;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+  }
+}
