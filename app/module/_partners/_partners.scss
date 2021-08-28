@@ -1,5 +1,5 @@
 .partners {
-  padding: 230px 120px 300px 120px;
+  padding: 230px 0 300px;
   background-image: url('../images/partners/partners-bg.svg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -11,7 +11,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 24px;
-    margin-left: -50px;
   }
   &__item {
     background: #FFFFFF;
