@@ -9,6 +9,8 @@
 @import '../module/_clutch/_clutch';
 @import '../module/_discuss/_discuss';
 @import '../module/_contacts/_contacts';
+@import '../module/_content/_content';
+@import '../module/_services-block/_services-block';
 
 .breadcrumbs {
   padding: 45px 0;
@@ -47,4 +49,8 @@
     text-transform: uppercase;
     color: #194484;
   }
+}
+
+.clutch {
+  margin-bottom: 140px;
 }
