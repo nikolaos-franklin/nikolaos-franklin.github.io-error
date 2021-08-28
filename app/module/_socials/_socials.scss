@@ -1,0 +1,19 @@
+.socials {
+  position: absolute;
+  right: 0;
+  position: fixed;
+  z-index: 500;
+  background-color: #fff;
+  top: 350px;
+  box-shadow: 0px 2px 12px 1px rgba(29, 51, 107, 0.25);
+  border-radius: 3px;
+
+  &__list-item {
+    padding: 12px;
+    border-bottom: 1px solid #bfc3c8;
+  }
+
+  &__list-item:last-child() {
+    border-bottom: none;
+  }
+}

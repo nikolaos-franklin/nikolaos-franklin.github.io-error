@@ -58,6 +58,25 @@ $hoverColor: #44C9FF;
   }
 }
 
+%link-green {
+    padding: 10px 50px;
+    border: 2px solid #06B25F;
+    border-radius: 6px;
+    color: #06B25F;
+    transition: all .3s;
+    background-color: #fff;
+    cursor: pointer;
+
+    &:hover {
+      background: #06B25F;
+      color: #fff;
+    }
+
+    &:focus {
+      outline: 0;
+    }
+}
+
 %btn {
   @extend %montserrat-700;
   padding: 5px 25px;
