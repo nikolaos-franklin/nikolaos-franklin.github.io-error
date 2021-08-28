@@ -1,0 +1,73 @@
+.recent {
+  padding: 210px 47px 316px 47px;
+  &__title {
+    @extend %title;
+    margin-bottom: 110px;
+  }
+  &__slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__slider-card {
+    width: 400px;
+    height: 440px;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+    border-radius: 16px;
+    margin: 10px 40px;
+  }
+  &__slider-content {
+    padding: 16px 12px 20px 16px;
+    max-width: 370px;
+  }
+  &__slider-title {
+    @extend %harabara-700;
+    font-size: 24px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: #0D6EB7;
+    margin-bottom: 8px;
+    word-spacing: -8px;
+  }
+}
+
+// button.slick-prev {
+//   font-size: 0;
+//   border: none;
+//   background-color: transparent;
+//   background-image: url('../images/decor/arrow-left.svg');
+//   background-repeat: no-repeat;
+//   background-size: cover;
+//   width: 45px;
+//   height: 26px;
+//   left: 0;
+//   cursor: pointer;
+// }
+
+.recent__slider {
+  position: relative;
+  padding: 0px 60px; // поля между стрелкой и краем слайдера
+}
+
+
+.recent__slider .slick-arrow {
+  position: absolute;
+  top: 50%; // выравнивание по вертикали
+  margin: -15px 0 0 0; // корректировка  вертикального выравнивания
+  z-index: 2; // стрелки сверху картинок
+  font-size: 0; // убираем надпись на дефолтной стрелке
+  width: 45px;
+  height: 26px;
+  cursor: pointer;
+}
+
+ .slider .slick-arrow.slick-prev {
+   left: 0; // левая стрелка остается с левой стороны слайдера
+   background: url('../images/decor/arrow-left.svg') 0 0 / 100% no-repeat;
+ }
+
+ .slider .slick-arrow.slick-next {
+   right: 0; // правая стрелка переместилась справа от слайдера
+   background: url('../images/decor/arrow-rigth.svg') 0 0 / 100% no-repeat;
+ }

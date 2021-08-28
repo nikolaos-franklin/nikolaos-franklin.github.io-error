@@ -11,6 +11,7 @@
 @import '../module/_contacts/_contacts';
 @import '../module/_content/_content';
 @import '../module/_services-block/_services-block';
+@import '../module/_recent/_recent';
 
 .breadcrumbs {
   padding: 45px 0;
@@ -53,4 +54,17 @@
 
 .clutch {
   margin-bottom: 140px;
+}
+
+.services-block {
+  margin-bottom: 140px;
+}
+
+.discuss {
+  margin-bottom: 130px;
+}
+
+.contacts {
+  padding-top: 95px;
+  margin-bottom: 10px;
 }
