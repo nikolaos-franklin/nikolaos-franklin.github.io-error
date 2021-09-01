@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mobile Application Dev</title>
+  <link rel="stylesheet" href="css/mobile_app.min.css">
+</head>
+<body>
+
+  <div class="wrapper">
+  
+    {% include 'app/module/_header-white/_header-white.html' %}
+    {% include 'app/module/_socials/_socials.html' %}
+
+    <main class="page">
+
+    <div class="breadcrumbs">
+         <div class="big-container">
+          <ul class="breadcrumbs__list">
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="index.html">
+                  Home
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                  Services
+              </a>
+            </li>
+            <li class="breadcrumbs__item">
+              <a class="breadcrumbs__link" href="#">
+                  Mobile Application Development
+              </a>
+            </li>
+          </ul>
+        </div>
+       </div>
+
+       <section class="top">
+         <div class="big-container">
+           <div class="top__inner">
+             <h2 class="top__title">
+               Mobile Application Development
+             </h2>
+             <div class="top__decor">
+               <img src="images/top/mobile_app.png" alt="">
+             </div>
+           </div>
+         </div>
+       </section>
+
+      {% include 'app/module/_content/_content.html' %}
+
+    </main>
+  
+  </div>
+  
+</body>
+</html>
