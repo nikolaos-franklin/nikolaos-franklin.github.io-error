@@ -1,0 +1,161 @@
+@import 'vars'; //пишутся переменные для цвета, шрифта и т.д. 
+@import 'fonts';
+@import 'reset'; //обнуление стилей
+@import 'libs';
+@import 'global'; //глобальные стили, типо reset.css. Что-то для бади, ссылок
+@import '../module/_header-white/_header-white';
+@import '../module/_socials/_socials';
+@import '../module/_footer/_footer';
+
+.breadcrumbs {
+  padding: 45px 0;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item+.breadcrumbs__item {
+    margin-left: 10px;
+    padding-left: 10px;
+    position: relative;
+
+    &:before {
+      content: '›';
+      position: absolute;
+      left: -3px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 26px;
+    color: #194484;
+  }
+}
+
+.top {
+  padding-top: 55px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %harabara-700;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #194484;
+    max-width: 600px;
+  }
+}
+
+.blog {
+  padding: 80px 0;
+  background-image: url('../images/blog-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  &__card {
+    width: 100%;
+    display: flex;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 16px rgba(29, 51, 107, 0.15);
+    border-radius: 12px;
+  }
+  &__card:not(:last-child) {
+    margin-bottom: 65px;
+  }
+  &__card-img {
+    width: 257px;
+    height: 257px;
+     img {
+       width: 257px;
+       height: 257px;
+       max-width: 257px;
+       border-radius: 12px 0 0 12px;
+     }
+  }
+  &__card-content {
+    padding: 20px 43px 23px 90px;
+  }
+  &__card-top {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  &__card-stars {
+    margin-right: 40px;
+  }
+  &__card-time,
+  &__card-views {
+    position: relative;
+    padding: 0 17px 0 30px;
+  }
+  &__card-time::before,
+  &__card-views::before {
+    content: '';
+    position: absolute;
+    background-image: url('../images/blog_time.svg');
+    background-repeat: no-repeat;
+    width: 24px;
+    height: 24px;
+    left: 5px;
+  }
+  &__card-title {
+    @extend %montserrat-700;
+    font-size: 24px;
+    line-height: 26px;
+    text-transform: capitalize;
+    color: #242424;
+    margin-bottom: 15px;
+  }
+  &__card-comment {
+    margin-bottom: 13px;
+  }
+  &__card-bottom {
+    display: flex;
+    @extend %montserrat-600;
+  }
+  &__card-author {
+    display: flex;
+    padding: 0 16px 0 8px;
+    border-right: 1px solid #B1B1B1;
+    display: flex;
+    align-items: center;
+  }
+  &__card-atuhorimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+  &__card-date {
+    padding-left: 16px;
+  }
+}
+
+.pagination {
+  padding: 15px 0 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__list {
+    display: flex;
+  }
+  &__link {
+    @extend %harabara-700;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #194484;
+  }
+  &__item:not(:last-child) {
+    margin-right: 45px;
+  }
+  &__arrows {
+    padding: 0 25px;
+  }
+}

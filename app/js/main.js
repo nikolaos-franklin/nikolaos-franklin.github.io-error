@@ -1,5 +1,20 @@
 $(function(){
 
+  $(".blog__card-stars").each( function() {
+    var rating = $(this).attr("data-rating");
+    $(this).rateYo(
+        {
+            rating: rating,
+            rating: 4,
+            starWidth: "24px",
+            normalFill: "#E1E1E1",
+            ratedFill: "#06B25F",
+            spacing: "10px",
+            readOnly: true
+        }
+    );
+});
+
    $('.recent__slider').slick({
    dots: false,
    slidesToShow: 3,
