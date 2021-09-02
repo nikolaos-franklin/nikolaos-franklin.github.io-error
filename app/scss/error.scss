@@ -1,0 +1,36 @@
+@import 'vars'; //пишутся переменные для цвета, шрифта и т.д. 
+@import 'fonts';
+@import 'reset'; //обнуление стилей
+@import 'libs';
+@import 'global'; //глобальные стили, типо reset.css. Что-то для бади, ссылок
+@import '../module/_header-white/_header-white';
+@import '../module/_footer/_footer';
+@import '../module/_discuss/_discuss';
+@import '../module/_contacts/_contacts';
+
+.error {
+  padding: 25px 0 100px 0;
+  &__inner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../images/error.png');
+    background-repeat: no-repeat;
+    padding-top: 600px;
+  }
+  &__title {
+    @extend %harabara-700;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #194484;
+    margin-bottom: 30px;
+  }
+  &__link {
+    @extend %btn;
+    padding: 10px 15px;
+  }
+}
