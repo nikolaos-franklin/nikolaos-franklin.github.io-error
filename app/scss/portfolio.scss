@@ -1,0 +1,101 @@
+@import 'vars'; //пишутся переменные для цвета, шрифта и т.д. 
+@import 'fonts';
+@import 'reset'; //обнуление стилей
+@import 'libs';
+@import 'global'; //глобальные стили, типо reset.css. Что-то для бади, ссылок
+@import '../module/_header-white/_header-white';
+@import '../module/_socials/_socials';
+@import '../module/_footer/_footer';
+@import '../module/_discuss/_discuss';
+@import '../module/_contacts/_contacts';
+
+.breadcrumbs {
+  padding: 45px 0;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item+.breadcrumbs__item {
+    margin-left: 10px;
+    padding-left: 10px;
+    position: relative;
+
+    &:before {
+      content: '›';
+      position: absolute;
+      left: -3px;
+    }
+  }
+
+  &__link {
+    font-size: 16px;
+    line-height: 26px;
+    color: #194484;
+  }
+}
+
+.top {
+  margin-top: -90px;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    @extend %harabara-700;
+    font-size: 44px;
+    line-height: 60px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #194484;
+    max-width: 600px;
+  }
+}
+
+.portfolio {
+  padding-bottom: 50px;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    background: #FFFFFF;
+    box-shadow: 0px 3px 16px rgba(29, 51, 107, 0.15);
+    border-radius: 12px;
+    margin-bottom: 75px;
+  }
+  &__item:nth-child(even) {
+    .portfolio__item-picture {
+      order: 1;
+      img {
+        border-radius: 0 12px 12px 0;
+      }
+    }
+  } 
+  &__item-picture {
+    width: 555px;
+    height: auto;
+    img {
+      max-width: 555px;
+      width: 555px;
+      border-radius: 12px 0 0 12px;
+      height: 100%;
+    }
+  }
+  &__item-content {
+    padding: 24px 38px 24px 24px;
+  }
+  &__item-title {
+    text-transform: uppercase;
+    @extend %harabara-700;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    color: #0D6EB7;
+    margin-bottom: 8px;
+  }
+  &__item-text+.portfolio__item-text {
+   padding-top: 24px;
+  }
+}
