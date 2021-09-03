@@ -61,3 +61,36 @@
     }
   }
 }
+
+.about {
+  padding-bottom: 45px;
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 55px;
+    margin-right: 115px;
+  }
+  &__item:nth-child(even) {
+    .about__item-picture {
+      order: 1;
+    }
+  }
+  &__item-content {
+    max-width: 550px;
+  }
+  &__item-text {
+    margin-bottom: 20px;
+  }
+  &__item-special {
+    color: #0D6EB7;
+    margin-bottom: 33px;
+  }
+  &__item-title {
+    @extend %montserrat-700;
+    font-size: 24px;
+    line-height: 34px;
+    color: #0D6EB7;
+    margin-bottom: 5px;
+  }
+}
