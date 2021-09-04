@@ -1,5 +1,9 @@
 $(function(){
 
+   $('.current__spollers-top').click(function(event){
+     $(this).toggleClass('active').next().slideToggle(300);
+   });
+
     $('.recent-articles__slider').slick({
       dots: false,
       slidesToShow: 3,
