@@ -1,0 +1,76 @@
+@import 'vars'; //пишутся переменные для цвета, шрифта и т.д. 
+@import 'fonts';
+@import 'reset'; //обнуление стилей
+@import 'libs';
+@import 'global'; //глобальные стили, типо reset.css. Что-то для бади, ссылок
+@import '../module/_header-white/_header-white';
+@import '../module/_socials/_socials';
+@import '../module/_footer/_footer';
+@import '../module/_discuss/_discuss';
+@import '../module/_recent-articles/_recent-articles';
+
+.breadcrumbs {
+  padding: 45px 0;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item+.breadcrumbs__item {
+    margin-left: 10px;
+    padding-left: 10px;
+    position: relative;
+
+    &:before {
+      content: '›';
+      position: absolute;
+      left: -3px;
+    }
+  }
+
+  &__link {
+    color: #242424;
+  }
+}
+
+.author {
+  padding: 45px 0 50px;
+   &__inner {
+     padding: 0 117px;
+   }
+   &__top {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding-bottom: 10px;
+     margin-bottom: 15px;
+     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+   }
+   &__title {
+     @extend %title;
+   }
+   &__socials {
+     display: flex;
+   }
+   &__social {
+     padding-left: 32px;
+   }
+   &__position {
+     @extend %harabara-700;
+     font-size: 24px;
+     line-height: 38px;
+     letter-spacing: 0.05em;
+     text-transform: uppercase;
+     margin-bottom: 45px;
+   }
+   &__article-img {
+     border-radius: 8px;
+     width: 320px;
+     height: 340px;
+     margin: 0 30px 40px 0;
+     float: left;
+   }
+   &__article-text {
+     margin-bottom: 25px;
+   }
+}
