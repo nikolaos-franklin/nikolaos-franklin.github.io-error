@@ -1,0 +1,203 @@
+@import 'vars'; //пишутся переменные для цвета, шрифта и т.д. 
+@import 'fonts';
+@import 'reset'; //обнуление стилей
+@import 'libs';
+@import 'global'; //глобальные стили, типо reset.css. Что-то для бади, ссылок
+@import '../module/_header-white/_header-white';
+@import '../module/_socials/_socials';
+@import '../module/_footer/_footer';
+@import '../module/_discuss/_discuss';
+@import '../module/_recent-articles/_recent-articles';
+
+.breadcrumbs {
+  padding: 45px 0;
+
+  &__list {
+    display: flex;
+  }
+
+  &__item+.breadcrumbs__item {
+    margin-left: 10px;
+    padding-left: 10px;
+    position: relative;
+
+    &:before {
+      content: '›';
+      position: absolute;
+      left: -3px;
+    }
+  }
+  &__link {
+    color: #242424;
+  }
+}
+
+  .top {
+    padding-top: 5px;
+
+    &__inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &__title {
+      @extend %harabara-700;
+      font-size: 44px;
+      line-height: 60px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #194484;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .article {
+    padding: 40px 0 80px;
+    &__inner {
+      padding: 0 117px;
+    }
+    &__top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    &__top-left {
+      display: flex;
+    }
+    &__top-stars {
+      margin-right: 40px;
+    }
+    &__top-time,
+    &__top-views {
+      position: relative;
+      padding: 0 17px 0 30px;
+      color: #242424;
+    }
+
+    &__top-time::before,
+    &__top-views::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/blog_time.svg');
+      background-repeat: no-repeat;
+      width: 24px;
+      height: 24px;
+      left: 0px;
+  }
+
+  &__top-views::before {
+    background-image: url('../images/blog_reviews.svg');
+  }
+
+  &__top-share {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  &__img {
+    width: 100%;
+    filter: drop-shadow(4px 4px 16px rgba(21, 19, 45, 0.25));
+    border-radius: 12px;
+    margin-bottom: 15px;
+  }
+  &__bottom {
+    display: flex;
+    margin-bottom: 35px;
+  }
+  &__author {
+    display: flex;
+    padding: 0 16px 0 8px;
+    border-right: 1px solid #B1B1B1;
+    display: flex;
+    align-items: center;
+  }
+
+  &__atuhorimg {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 8px;
+  }
+
+  &__date {
+    padding-left: 16px;
+  }
+  &__text {
+    margin-bottom: 20px;
+  }
+  &__text:last-of-type {
+    margin-bottom: 35px;
+  }
+  &__helpful {
+    padding: 36px 0;
+    background: #F0F5FC;
+    box-shadow: 0px 3px 16px 2px rgba(29, 51, 107, 0.15);
+    border-radius: 16px;
+    margin-bottom: 67px;
+  }
+  &__helpful-title {
+    @extend %montserrat-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #242424;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  &__helpful-stars {
+    margin: 0 auto;
+  }
+  &__about {
+    max-width: 666px;
+  }
+  &__about-title {
+    @extend %harabara-700;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #0D6EB7;
+    margin-bottom: 30px;
+  }
+  &__about-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__about-img {
+    width: 170px;
+    height: 170px;
+    border-radius: 8px;
+    margin-right: 35px;
+  }
+  &__about-top {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    margin-bottom: 10px;
+  }
+  &__about-topbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+  }
+  &__about-name {
+    @extend %montserrat-700;
+    font-size: 20px;
+    line-height: 26px;
+    color: #242424;
+  }
+  &__about-socials {
+    display: flex;
+  }
+  &__about-social {
+    padding-left: 12px;
+  }
+  &__about-position {
+    margin-bottom: 8px;
+  }
+}
+
+

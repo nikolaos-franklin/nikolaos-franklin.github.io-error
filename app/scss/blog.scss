@@ -64,6 +64,7 @@
     background: #FFFFFF;
     box-shadow: 0px 3px 16px rgba(29, 51, 107, 0.15);
     border-radius: 12px;
+    color: #242424;
   }
   &__card:not(:last-child) {
     margin-bottom: 65px;
@@ -92,6 +93,7 @@
   &__card-views {
     position: relative;
     padding: 0 17px 0 30px;
+    color: #242424;
   }
   &__card-time::before,
   &__card-views::before {
@@ -101,8 +103,11 @@
     background-repeat: no-repeat;
     width: 24px;
     height: 24px;
-    left: 5px;
+    left: 0px;
   }
+   &__card-views::before {
+     background-image: url('../images/blog_reviews.svg');
+   }
   &__card-title {
     @extend %montserrat-700;
     font-size: 24px;
@@ -113,10 +118,12 @@
   }
   &__card-comment {
     margin-bottom: 13px;
+    color: #242424;
   }
   &__card-bottom {
     display: flex;
     @extend %montserrat-600;
+    color: #242424;
   }
   &__card-author {
     display: flex;

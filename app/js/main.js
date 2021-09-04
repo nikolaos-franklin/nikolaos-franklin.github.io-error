@@ -1,5 +1,34 @@
 $(function(){
 
+  $(".article__helpful-stars").each( function() {
+    var rating = $(this).attr("data-rating");
+    $(this).rateYo(
+        {
+            rating: rating,
+            rating: 0,
+            starWidth: "24px",
+            normalFill: "#E1E1E1",
+            ratedFill: "#06B25F",
+            spacing: "10px"
+        }
+    );
+});
+
+  $(".article__top-stars").each( function() {
+    var rating = $(this).attr("data-rating");
+    $(this).rateYo(
+        {
+            rating: rating,
+            rating: 4,
+            starWidth: "24px",
+            normalFill: "#E1E1E1",
+            ratedFill: "#06B25F",
+            spacing: "10px",
+            readOnly: true
+        }
+    );
+});
+
   $(".blog__card-stars").each( function() {
     var rating = $(this).attr("data-rating");
     $(this).rateYo(
