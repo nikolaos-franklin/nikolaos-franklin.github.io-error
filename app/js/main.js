@@ -1,7 +1,7 @@
 $(function(){
 
   // Get the modal
-var modal = document.getElementById("popup");
+const popupLinks = document.querySelectorAll('.popup');
 
 // Get the button that opens the modal
 var btn = document.getElementById("myBtn");
