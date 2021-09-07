@@ -92,9 +92,9 @@
                         Unity Developer 1
                       </h4>
                       </div>
-                      <button class="current__spollers-btn">
+                      <a class="current__spollers-btn" href="#popup" id="myBtn">
                       Apply
-                    </button>
+                      </a>
                     </div>
                   </div>
 
@@ -201,11 +201,11 @@
                         <img class="current__spollers-img" src="images/decor/arrow.svg" alt="arrow">
                         <h4 class="current__spollers-title">
                         Unity Developer 2
-                      </h4>
+                        </h4>
                       </div>
-                      <button class="current__spollers-btn">
+                      <a class="current__spollers-btn" href="#popup" id="myBtn">
                       Apply
-                    </button>
+                      </a>
                     </div>
                   </div>
 
@@ -317,9 +317,38 @@
 
     </div>
 
+    <div class="popup" id="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a class="popup__close close" href="#">X</a>
+          <div class="popup__title">
+            join the team
+          </div>
+          <div class="popup__subtitle">
+            Unity Developer
+          </div>
+          <form class="popup__form">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email" required>
+            <input type="url" placeholder="Portfolio link" required>
+            <div class="popup__form-box">
+              <input class="popup__select-input" type="text" placeholder="Please Attach your CV File..." required>
+              <div class="popup__form-select">
+                <input class="popup__input-select" type="button" id="get_file" value="SELECT FILE">
+                <input class="popup__my-file" type="file" id="my_file">
+              </div>
+            </div>
+            <textarea placeholder="Message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    
     <script src="js/main.js"></script>
   </body>
 </html>
