@@ -1,0 +1,91 @@
+.faq {
+  padding: 110px 0 290px;
+  &__title {
+    @extend %title;
+    margin-bottom: 60px;
+  }
+  &__questions {
+    padding: 0 60px!important;
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 45px;
+    &::before {
+      content: '';
+      position: absolute;
+      background-image: url('../images/decor/subtract.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      left: -30px;
+      top: 9px;
+      bottom: 0;
+      height: 95%;
+      width: 64px;
+      background-position: right;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      background-image: url('../images/decor/subtract-right.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      right: -30px;
+      top: 9px;
+      bottom: 0;
+      height: 95%;
+      width: 64px;
+      background-position: left;
+    }
+  }
+  &__question {
+    @extend %montserrat-600;
+    padding-left: 20px;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0D6EB7;
+    position: relative;
+    margin-bottom: 25px;
+    &::before {
+      content: '';
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: #0D6EB7;
+      left: 0;
+      top: 8px;
+    }
+  }
+  &__spoilers {
+    padding: 0 60px;
+  }
+  &__spoiler {
+    border-bottom: 1px solid #86B7DB;
+    padding-bottom: 16px;
+    margin-bottom: 18px;
+  }
+  &__spoiler-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+    cursor: pointer;
+  }
+  &__spoiler-top.active {
+    transition: all .5s;
+
+    img {
+      transform: rotate(180deg);
+      transition: all .5s;
+    }
+  }
+  &__spoiler-title {
+    @extend %montserrat-700;
+    padding-left: 15px;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: capitalize;
+    color: #242424;
+  }
+  &__spoiler-content {
+    padding-left: 37px;
+  }
+}
