@@ -1,5 +1,65 @@
 $(function(){
 
+  $(document).ready(function() {
+
+ // Get current page URL
+ var url = window.location.href;
+
+ // remove # from URL
+ url = url.substring(0, (url.indexOf("#") == -1) ? url.length : url.indexOf("#"));
+
+ // remove parameters from URL
+ url = url.substring(0, (url.indexOf("?") == -1) ? url.length : url.indexOf("?"));
+
+ // select file name
+ url = url.substr(url.lastIndexOf("/") + 1);
+ 
+ // If file name not avilable
+ if(url == ''){
+ url = 'index.html';
+ }
+ 
+ // Loop all menu items
+ $('.menu__list li').each(function(){
+
+  // select href
+  var href = $(this).find('a').attr('href');
+
+  // Check filename
+  if(url == href){
+
+   // Select parent class
+   var parentClass = $(this).parent('ul').attr('class');
+ 
+   if(parentClass == 'submenu'){
+ 
+    // Add class
+    $(this).addClass('subactive');
+    $(this).parents('.menu__list li').addClass('active');
+   }else{
+
+    // Add class
+    $(this).addClass('active');
+   }
+ 
+  }
+ });
+});
+
+  //  $(function(){
+
+  //   var url = window.location.pathname, 
+  //       urlRegExp = new RegExp(url.replace(/\/$/,'') + "$"); // create regexp to match current url pathname and remove trailing slash if present as it could collide with the link in navigation in case trailing slash wasn't present there
+  //       // now grab every link from the navigation
+  //       $('.menu__list a').each(function(){
+  //           // and test its normalized href against the url pathname regexp
+  //           if(urlRegExp.test(this.href.replace(/\/$/,''))){
+  //               $(this).addClass('active');
+  //           }
+  //       });
+
+  // });
+
     $('.faq__spoiler-top').click(function(event){
      $(this).toggleClass('active').next().slideToggle(300);
    });
@@ -99,8 +159,15 @@ $(function(){
    fade: true,
    cssEase: 'linear',
    speed: 1000,
-   appendDots:$('.slick-dots')
+   appendDots:$('.slick-dots'),
+    onAfterChange:function(slickSlider,i){
+         //remove all active class
+         $('.slider-nav .slick-slide').removeClass('slick-active');
+         //set active class for current slide
+         $('.slider-nav .slick-slide').eq(i).addClass('slick-active');         
+     }
  });
+ $('.slider-nav .slick-slide').eq(0).addClass('slick-active');
 
  $("#rateYo").rateYo({
     rating: 4.5,

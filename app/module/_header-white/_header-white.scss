@@ -100,10 +100,12 @@
       }
     }
   }
-  &__list-link {
-    .current {
-      border-bottom: 1px solid #0D6EB7;
-      color: $hoverColor;
-    }
-  }
+  // &__list-link.active {
+  //   border-bottom: 1px solid #0D6EB7;
+  //   color: $hoverColor;
+  // }
+}
+.menu__list-link.active {
+  border-bottom: 3px solid #00A4E8;
+  color: #00A4E8;
 }
