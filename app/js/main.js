@@ -1,5 +1,14 @@
 $(function(){
 
+  $('.menu__btn').on('click', function(){
+    $('.menu__list').toggleClass('menu__list--active');
+  });
+
+  $('.menu__list-btn').on('click', function(){
+    $('.menu__list').removeClass('menu__list--active');
+  });
+
+
   $(document).ready(function() {
 
  // Get current page URL
