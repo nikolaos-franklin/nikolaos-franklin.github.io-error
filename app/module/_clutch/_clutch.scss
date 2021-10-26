@@ -32,3 +32,40 @@
     line-height: 26px;
   }
 }
+
+@media (max-width: 900px) {
+  .clutch {
+    margin: 0 30px;
+    &__inner {
+      flex-wrap: wrap;
+      flex-direction: column;
+   } 
+   &__stars {
+     padding: 35px 0 37px;
+   }
+  }
+}
+
+@media (max-width: 460px) {
+  .clutch {
+    padding: 30px 20px 53px 20px;
+    .container {
+      padding: 0px;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .clutch {
+    &__stars {
+    padding: 0px 0 18px;
+    flex-direction: column;
+    }
+    &__star {
+      padding: 10px 0;
+    }
+    &__link {
+      font-size: 15px;
+    }
+  }
+}
