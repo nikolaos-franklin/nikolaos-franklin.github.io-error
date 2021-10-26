@@ -221,3 +221,11 @@
     padding-left: 0;
   }
 }
+
+@media (max-width: 340px) {
+  .header {
+    &__inner {
+    padding: 10px;
+  }
+  }
+}
