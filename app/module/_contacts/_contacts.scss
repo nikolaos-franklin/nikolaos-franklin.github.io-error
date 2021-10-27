@@ -102,3 +102,64 @@
     padding: 13px 0;
   }
 }
+
+@media (max-width: 900px) {
+  .contacts {
+    padding: 70px 0;
+    &__title {
+      margin-bottom: 40px;
+      font-size: 31px;
+      line-height: 30px;
+    }
+    &__subtitle {
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .contacts {
+    &__box {
+      flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .contacts {
+    &__form-box::before,
+    &__form-box::after {
+      display: none;
+    }
+    &__form::before {
+      display: none;
+    }
+    &__form-box {
+      padding: 0 30px;
+    }
+    &__title {
+      margin-bottom: 17px;
+      font-size: 22px;
+      line-height: 24px;
+    }
+    &__subtitle {
+      font-size: 18px;
+      line-height: 28px;
+    }
+    &__text {
+      line-height: 26px;
+      }
+  }
+}
+
+@media (max-width: 370px) {
+  .contacts {
+    &__socials {
+      margin-bottom: 67px;
+    }
+    &__form {
+      padding: 40px 22px;
+    }
+  }
+}

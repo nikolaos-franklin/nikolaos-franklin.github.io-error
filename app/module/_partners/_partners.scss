@@ -40,8 +40,8 @@
     text-align: center;
     color: #194484;
     cursor: pointer;
-    display: inline-block;
     padding: 10px;
+    justify-content: center;
   }
 }
 
@@ -70,7 +70,7 @@
 
 @media (max-width: 900px) {
   .partners {
-    padding: 120px 0;
+    padding: 70px 0;
     &__title {
       margin-bottom: 40px;
       font-size: 31px;
@@ -97,6 +97,11 @@
     &__item {
       max-width: 200px;
       height: 90px;
+    }
+    &__title {
+      margin-bottom: 40px;
+      font-size: 22px;
+      line-height: 24px;
     }
 
     img {

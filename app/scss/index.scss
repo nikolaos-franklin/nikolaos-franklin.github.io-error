@@ -234,8 +234,8 @@
 @media (max-width: 610px) {
   .technologies__text,
   .services__item-text {
-      font-size: 18px;
-      line-height: 30px;
+      font-size: 16px;
+      line-height: 26px;
    }
   .technologies__box-item+.technologies__box-item {
     margin-left: 40px;
@@ -250,6 +250,22 @@
     font-size: 16px;
     line-height: 20px;
     }
+  }
+  .services {
+    &__item-title {
+      font-size: 18px;
+      line-height: 38px;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .technologies__title,
+  .services__title,
+  .achievements__title {
+    margin-bottom: 40px;
+    font-size: 22px;
+    line-height: 24px;
   }
 }
 
