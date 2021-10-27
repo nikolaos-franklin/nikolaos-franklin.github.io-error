@@ -26,3 +26,14 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .partners {
+    padding: 120px 0;
+    &__title {
+      margin-bottom: 40px;
+      font-size: 31px;
+      line-height: 30px;
+    }
+  }
+}
