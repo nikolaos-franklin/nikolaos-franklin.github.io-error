@@ -1,5 +1,17 @@
 $(function(){
 
+  jQuery(document).ready(function($){
+  if($('ul.partners__box').find('li').length > 8){
+  $('.partners__btn-show').click(function(){
+  $('ul.partners__box li:nth-child(n+9)').slideToggle('');
+  $(this).toggleClass('opnd_g');
+  if($(this).hasClass('opnd_g')){
+  $(this).html('Hide all');}
+  else {$(this).html('Show more');}
+  });
+  }else{$('.show_hide_list').hide();}
+  });
+
   $('.menu__btn').on('click', function(){
     $('.menu__list').toggleClass('menu__list--active');
   });
