@@ -18,6 +18,7 @@
   padding: 45px 0;
   &__list {
     display: flex;
+    flex-wrap: wrap;
   }
   &__item+.breadcrumbs__item {
     margin-left: 10px;
