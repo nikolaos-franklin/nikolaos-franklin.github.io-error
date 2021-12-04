@@ -160,6 +160,7 @@
   }
 }
 
+
 @media (max-width: 1100px) {
   .achievements {
     &__cards {
@@ -175,17 +176,7 @@
   .achievements {
     padding: 70px 0;
   }
-  .discuss {
-    padding: 110px 0 145px;
-    &__title {
-    font-size: 30px;
-    line-height: 40px;
-    }
-    &__text {
-    font-size: 20px;
-    line-height: 25px;
-    }
-  }
+  
   .services {
     &__item {
       flex-direction: column;
@@ -240,17 +231,7 @@
   .technologies__box-item+.technologies__box-item {
     margin-left: 40px;
   }
-  .discuss {
-    padding: 70px 0 95px;
-    &__title {
-    font-size: 24px;
-    line-height: 38px;
-    }
-    &__text {
-    font-size: 16px;
-    line-height: 20px;
-    }
-  }
+
   .services {
     &__item-title {
       font-size: 18px;

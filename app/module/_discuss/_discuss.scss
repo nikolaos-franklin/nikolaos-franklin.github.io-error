@@ -54,3 +54,31 @@
     }
   }
 }
+
+@media (max-width: 900px) {
+  .discuss {
+    padding: 110px 0 145px;
+    &__title {
+    font-size: 30px;
+    line-height: 40px;
+    }
+    &__text {
+    font-size: 20px;
+    line-height: 25px;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+    .discuss {
+    padding: 70px 0 95px;
+    &__title {
+    font-size: 24px;
+    line-height: 38px;
+    }
+    &__text {
+    font-size: 16px;
+    line-height: 20px;
+    }
+  }
+}
