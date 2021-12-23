@@ -40,3 +40,58 @@
     padding-top: 45px;
   }
 }
+
+@media (max-width: 1200px) {
+  .services-block {
+    &__card {
+      width: 270px;
+      height: 280px;
+      padding: 35px 21px 20px 21px;
+      margin-bottom: 50px;
+    }
+    &__card-text {
+      font-size: 16px;
+      line-height: 25px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .services-block {
+    &__card {
+      width: 145px;
+      height: 162px;
+      padding: 35px 8px 16px 8px;
+      margin-bottom: 50px;
+    }
+    &__card-text {
+      font-size: 12px;
+      line-height: 22px;
+    }
+    &__card-decor {
+      img {
+        max-width: 50%;
+        margin: 0 auto;
+      }
+    }
+    &__card-text {
+      padding-top: 22px;
+    }
+  }
+}
+
+@media (max-width: 420px) {
+  .services-block {
+    &__inner {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 29px;
+      grid-row-gap: 40px;
+      justify-items: center;
+      align-items: center;
+    }
+    &__card {
+      margin-bottom: 0;
+    }
+  }
+}
