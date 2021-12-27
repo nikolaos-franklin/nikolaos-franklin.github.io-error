@@ -201,7 +201,8 @@
   }
   .technologies__title,
   .services__title,
-  .achievements__title {
+  .achievements__title,
+  .services-block__title {
     margin-bottom: 40px;
     font-size: 31px;
     line-height: 30px;
@@ -243,7 +244,8 @@
 @media (max-width: 570px) {
   .technologies__title,
   .services__title,
-  .achievements__title {
+  .achievements__title,
+  .services-block__title {
     margin-bottom: 40px;
     font-size: 22px;
     line-height: 24px;
