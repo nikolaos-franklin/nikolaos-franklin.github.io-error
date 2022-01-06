@@ -89,3 +89,13 @@
     padding-left: 37px;
   }
 }
+
+@media (max-width: 1500px) {
+  .recent {
+    &__slider {
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

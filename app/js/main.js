@@ -171,11 +171,9 @@ $(function(){
    variableWidth: true,
    centerMode: true,
    responsive: [
-    {
-      breakpoint: 1300,
-      settings: {
-        slidesToShow: 2,
-      }
+     {
+      breakpoint: 1500,
+      settings: "unslick"
     }
   ]
  });
