@@ -167,10 +167,18 @@ $(function(){
    arrows: true,
    infinite: true,
    autoplay: true,
-   speed: 1000
+   speed: 1000,
+   variableWidth: true,
+   centerMode: true,
+   responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 2,
+      }
+    }
+  ]
  });
-
- 
 
  $('.top-slider__box').slick({
    dots: true,
