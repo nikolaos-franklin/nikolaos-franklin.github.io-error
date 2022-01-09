@@ -10,7 +10,7 @@
 @import '../module/_contacts/_contacts';
 
 .breadcrumbs {
-  padding: 45px 0;
+  padding: 45px 0; 
 
   &__list {
     display: flex;
@@ -98,5 +98,86 @@
   }
   &__item-text+.portfolio__item-text {
    padding-top: 24px;
+  }
+}
+
+@media (max-width: 900px) {
+  .breadcrumbs {
+    padding: 16px 0;
+  }
+
+  .top {
+    margin-top: 0;
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__title {
+      padding-top: 20px;
+      font-size: 33px;
+      line-height: 38px;
+      text-align: center;
+    }
+
+    &__decor {
+      max-width: 280px;
+      max-height: 290px;
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .portfolio {
+    &__item {
+      flex-direction: column;
+    }
+    &__item-picture img {
+      border-radius: 12px 12px 0 0;
+    }
+    &__item-picture {
+      margin: 0 auto;
+    }
+    &__item:nth-child(even) {
+      .portfolio__item-picture {
+        order: 0;
+        img {
+          border-radius: 12px 12px 0 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .top {
+    &__decor {
+      max-width: 240px;
+      max-height: 250px;
+    }
+  }
+  .portfolio {
+    &__item-picture {
+      width: 100%;
+      max-width: 100%;
+    }
+    &__item-picture img {
+      width: 100%;
+      max-width: 100%;
+    }
+    &__item-title {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .top {
+    &__title {
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
   }
 }
