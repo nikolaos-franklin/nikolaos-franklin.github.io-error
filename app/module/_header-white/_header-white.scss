@@ -181,6 +181,7 @@
     }
 
     &__list {
+      overflow: scroll;
       padding: 15px 15px 75px 47px !important;
       flex-direction: column;
       align-items: flex-start;
@@ -230,6 +231,11 @@
       padding-left: 0;
     }
 
+    &__list-item--link {
+      line-height: 25px;
+      margin-bottom: 10px;
+    }
+
     &__list-link {
       color: #0D6EB7;
     }
@@ -247,15 +253,6 @@
 
       a {
         color: #0D6EB7;
-      }
-    }
-
-    &__list-item--down {
-
-      .menu__list-item--link:nth-child(1),
-      .menu__list-item--link:nth-child(2),
-      .menu__list-item--link:nth-child(3) {
-        display: none;
       }
     }
   }
