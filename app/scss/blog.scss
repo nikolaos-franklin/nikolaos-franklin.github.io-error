@@ -81,7 +81,7 @@
      }
   }
   &__card-content {
-    padding: 20px 43px 23px 90px;
+    padding: 20px 43px 23px 78px;
   }
   &__card-top {
     display: flex;
@@ -89,6 +89,7 @@
   }
   &__card-stars {
     margin-right: 40px;
+    z-index: 0;
   }
   &__card-time,
   &__card-views {
@@ -165,5 +166,120 @@
   }
   &__arrows {
     padding: 0 25px;
+  }
+}
+
+@media (max-width: 1400px) {
+  .pagination {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .top {
+    padding-top: 10px;
+    &__title {
+      margin: 0 auto;
+    }
+  }
+  .blog {
+    &__card {
+      flex-direction: column;
+    }
+    &__card-img {
+      margin: 0 auto;
+    }
+    &__card-img img {
+      border-radius: 12px;
+    }
+    &__card-content {
+      padding: 20px 40px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .breadcrumbs {
+    padding: 16px 0;
+  }
+
+  .top {
+    margin-top: 0;
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__title {
+      padding-top: 20px;
+      font-size: 33px;
+      line-height: 38px;
+      text-align: center;
+    }
+
+    &__decor {
+      max-width: 280px;
+      max-height: 290px;
+    }
+  }
+}
+
+@media (max-width: 610px) {
+  .top {
+    &__decor {
+      max-width: 240px;
+      max-height: 250px;
+    }
+  }
+  .blog {
+    &__card-top {
+       flex-wrap: wrap;
+    }
+    &__card-stars {
+      width: 100%;
+    }
+    &__card-time,
+    &__card-views {
+      width: 50%;
+      padding-top: 10px;
+    }
+    &__card-content {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .top {
+    &__title {
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .blog {
+    &__card-bottom {
+      flex-wrap: wrap;
+    }
+    &__card-author {
+      border-right: none;
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    &__card-date {
+      padding-left: 46px;
+    }
+    &__card-title {
+      font-size: 18px;
+      line-height: 24px; 
+    }
+    &__card-time,
+    &__card-views {
+      width: 100%;
+      padding-top: 10px;
+    }
   }
 }
