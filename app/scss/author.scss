@@ -74,4 +74,29 @@
    &__article-text {
      margin-bottom: 25px;
    }
+} 
+
+@media (max-width: 900px) {
+  .breadcrumbs {
+    padding: 16px 0;
+  }
+
+  .top {
+    margin-top: 0;
+
+    &__inner {
+      flex-direction: column;
+    }
+  }
 }
+
+@media (max-width: 610px) {
+  .top {
+    &__decor {
+      max-width: 240px;
+      max-height: 250px;
+    }
+  }
+}
+
+

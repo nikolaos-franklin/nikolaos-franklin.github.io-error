@@ -100,4 +100,52 @@
     margin-bottom: 8px;
     letter-spacing: 0.05em;
   }
+} 
+
+@media (max-width: 1200px) {
+  .team {
+    padding: 60px 0;
+    &__inner {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      grid-gap: 0;
+    }
+    &__card {
+      padding: 20px;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .breadcrumbs {
+    padding: 16px 0;
+  }
+
+  .top {
+    margin-top: 0;
+
+    &__inner {
+      flex-direction: column;
+    }
+
+    &__title {
+      padding-top: 20px;
+      font-size: 33px;
+      line-height: 38px;
+      text-align: center;
+    }
+  }
+}
+
+
+@media (max-width: 570px) {
+  .top {
+    &__title {
+      font-size: 24px;
+      text-align: center;
+      letter-spacing: 0.05em;
+    }
+  }
 }

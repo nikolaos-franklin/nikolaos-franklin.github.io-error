@@ -97,7 +97,15 @@ $(function(){
       arrows: true,
       infinite: true,
       autoplay: true,
-      speed: 1000
+      speed: 1000,
+      responsive: [
+    {
+      breakpoint: 1800,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    ]
     });
 
     $(".recent-articles__top-stars").each( function() {
