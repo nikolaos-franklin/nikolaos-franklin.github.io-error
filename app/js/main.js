@@ -96,8 +96,8 @@ $(function(){
       slidesToScroll: 1,
       arrows: true,
       infinite: true,
-      //autoplay: true,
-      //speed: 1000,
+      autoplay: true,
+      speed: 1000,
       variableWidth: false,
       responsive: [
 	    {
