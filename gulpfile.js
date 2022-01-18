@@ -102,7 +102,8 @@ function build() {
     'app/css/team.min.css',
     'app/css/unity.min.css',
     'app/css/vr_app.min.css',
-    'app/js/main.min.js'
+    'app/js/main.min.js',
+    'app/js/jquery.rateyo.min.js'
   ], {base: 'app'})
   .pipe(dest('dist'))
 }
