@@ -96,15 +96,29 @@ $(function(){
       slidesToScroll: 1,
       arrows: true,
       infinite: true,
-      autoplay: true,
-      speed: 1000,
+      //autoplay: true,
+      //speed: 1000,
+      variableWidth: false,
       responsive: [
-    {
-      breakpoint: 1800,
-      settings: {
-        slidesToShow: 2,
-      }
-    },
+	    {
+	      breakpoint: 1550,
+	      settings: {
+	        slidesToShow: 2,
+	      }
+	    },
+      {
+	      breakpoint: 1191,
+	      settings: {
+	        slidesToShow: 1,
+	      }
+	    },
+      {
+	      breakpoint: 491,
+	      settings: {
+          slidesToShow: 1,
+	        arrows: false,
+	      }
+	    },
     ]
     });
 
@@ -119,6 +133,7 @@ $(function(){
             ratedFill: "#06B25F",
             spacing: "10px",
             readOnly: true
+            
         }
     );
 });
