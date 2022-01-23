@@ -83,12 +83,9 @@
 @media (max-width: 420px) {
   .services-block {
     &__inner {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
       grid-column-gap: 20px;
       grid-row-gap: 30px;
-      justify-items: center;
-      align-items: center;
+      min-width: 310px;
     }
     &__card {
       margin: 0;
