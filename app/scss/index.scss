@@ -128,7 +128,7 @@
     grid-gap: 25px;
   }
   &__card {
-    padding: 300px 29px 64px 29px;
+    padding: 300px 29px 64px;
     background-image: url('../images/achievs/one-bg.svg');
     background-repeat: no-repeat;
     background-size: contain;
@@ -218,6 +218,9 @@
   .achievements {
     &__cards {
       grid-template-columns: repeat(1, 1fr);
+    }
+    &__card {
+      padding: 300px 40px 64px;
     }
   }
 }

@@ -115,7 +115,7 @@
 @media (max-width: 900px) {
   .footer {
     padding-top: 250px;
-    margin-top: -220px;
+    margin-top: -110px;
     &__top {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -135,9 +135,8 @@
 
 @media (max-width: 670px) {
   .footer {
-    background-position: top;
-    padding-top: 390px;
-    margin-top: -480px;
+    background-position: right;
+    padding-top: 190px;
 
     &__top {
       grid-template-columns: repeat(1, 1fr);
@@ -151,7 +150,7 @@
 
 @media (max-width: 420px) {
   .footer {
-    margin-top: -490px;
+    margin-top: -80px;
     &__socials {
       max-width: 340px;
       grid-gap: 0;

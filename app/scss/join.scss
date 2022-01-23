@@ -126,6 +126,10 @@
     @extend %btn;
     padding: 10px 50px;
   }
+  &__spollers-btn--hide {
+    display: none;
+    text-align: center;
+  }
   // &__spollers-bottom {
   //   border-top: 1px solid #194484;
   //   display: none;
@@ -305,6 +309,12 @@
   }
 }
 
+@media (max-width: 1100px) {
+  .footer {
+    margin-top: -60px;
+  }
+}
+
 @media (max-width: 900px) {
   .breadcrumbs {
     padding: 16px 0;
@@ -339,6 +349,15 @@
     }
     &__spollers-left {
       padding-bottom: 15px;
+    }
+    &__spollers-btn {
+      display: none;
+    }
+    &__spollers-btn--hide {
+      display: block;
+    }
+    &__spollers-title {
+      text-align: center;
     }
   }
   .footer {
