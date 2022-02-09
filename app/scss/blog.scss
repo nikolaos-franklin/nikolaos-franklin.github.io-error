@@ -67,6 +67,10 @@
     border-radius: 12px;
     color: #242424;
   }
+  &__card-box {
+    display: flex;
+    flex-direction: column;
+  }
   &__card:not(:last-child) {
     margin-bottom: 65px;
   }
@@ -133,6 +137,7 @@
     border-right: 1px solid #B1B1B1;
     display: flex;
     align-items: center;
+    color: #242424;
   }
   &__card-atuhorimg {
     width: 30px;
