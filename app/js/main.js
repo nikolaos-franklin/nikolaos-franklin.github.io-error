@@ -97,7 +97,7 @@ $(function(){
       arrows: true,
       infinite: true,
       autoplay: true,
-      speed: 1000,
+      speed: 1500,
       variableWidth: false,
       responsive: [
 	    {
