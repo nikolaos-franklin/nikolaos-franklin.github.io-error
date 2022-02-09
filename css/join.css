@@ -1553,6 +1553,9 @@ body.lock {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .current__spollers-top {
+    padding-bottom: 10px;
+  }
   .current__spollers-left {
     padding-bottom: 15px;
   }
