@@ -129,7 +129,7 @@
   }
   &__card {
     padding: 300px 29px 64px;
-    background-image: url('../images/achievs/one-bg.svg');
+    background-image: url('../images/achievs/1.png');
     background-repeat: no-repeat;
     background-size: contain;
     border-radius: 16px;
@@ -150,13 +150,13 @@
     }
   }
   &__card:nth-child(2) {
-    background-image: url('../images/achievs/two-bg.svg');
+    background-image: url('../images/achievs/2.png');
   }
   &__card:nth-child(3) {
-    background-image: url('../images/achievs/three-bg.svg');
+    background-image: url('../images/achievs/3.png');
   }
   &__card:nth-child(4) {
-    background-image: url('../images/achievs/four-bg.svg');
+    background-image: url('../images/achievs/4.png');
   }
 }
 
